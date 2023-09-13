@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% load static %}
+<!-- Additional CSS or other template-specific tags can go here -->
+
+{% block content %}
+  
+<div class="head-topg">
+  <div class="hero-container">
+    <h1>Gallery</h1>
+  </div>
+</div>
+<div class="cont-gal">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="img-txtf"><img class="img-fluid" src="{% static 'assets/img/stylish-man-sitting-barbershop1.png' %}"></div>
+    </div>
+    <div class="col-md-6">
+      <div class="img-txt"><img class="img-fluid" src="{% static 'assets/img/handsome-man-barber-shop-styling-hair2.png' %}">
+        <div class="txt2">
+          <p class="ptxt1">Special Haircut<br><small>Hair Style</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="img-txt"><img class="img-fluid" src="{% static 'assets/img/stylish-man-sitting-barbershop1.png' %}">
+        <div class="txt3">
+        <img class="img-fluid" src="{% static 'assets/img/Rgister-business.png' %}">
+          <p>Register As A Business</p>
+          <button class="btn-business"><img src="{% static 'assets/img/arrow-border.png' %}">Register</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="img-txt"><img class="img-fluid" src="{% static 'assets/img/stylish-man-sitting-barbershop 3.png' %}">
+        <div class="txt3">
+        <img class="img-fluid" src="{% static 'assets/img/Rgister-business.png' %}">
+          <p>Register As A Business</p>
+          <button class="btn-business"><img src="{% static 'assets/img/arrow-border.png' %}">Register</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="img-txt"><img class="img-fluid" src="{% static 'assets/img/stylish-man-sitting-barbershop4.png' %}">
+        <div class="txt3">
+        <img class="img-fluid" src="{% static 'assets/img/Rgister-business.png' %}">
+          <p>Register As A Business</p>
+          <button class="btn-business"><img src="{% static 'assets/img/arrow-border.png' %}">Register</button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="img-txtf"><img class="img-fluid" src="{% static 'assets/img/stylish-man-sitting-barbershop4.png' %}"></div>
+    </div>
+    <div class="col-md-6">
+      <div class="img-txtf"><img class="img-fluid" src="{% static 'assets/img/man-closes-his-eyes-while-barber-shapes-his-black-beard 1.png' %}"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="img-txtf"><img class="img-fluid" src="{% static 'assets/img/stylish-man-sitting-barbershop 3.png' %}"></div>
+    </div>
+    <div class="col-md-6">
+      <div class="img-txtf"><img class="img-fluid" src="{% static 'assets/img/handsome-man-barber-shop-styling-hair2.png' %}"></div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="pagin">
+<ul class="pagination justify-content-center pagination-sm">
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  <li class="page-item"><a class="page-link" href="#">1</a></li>
+  <li class="page-item"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+</div>
+{% endblock %}

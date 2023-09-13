@@ -1,0 +1,445 @@
+{% extends 'base.html' %}
+
+{% load static %}
+<!-- Additional CSS or other template-specific tags can go here -->
+
+{% block content %}
+<div class="head-topbusiness">
+  <div class="hero-container">
+    <h1>MO’s Place</h1>
+  </div>
+</div>
+<div class="business-page">
+  <div class="container">
+    <ul>
+      <li><a href="#expert">Experts</a></li>
+      <li><a href="#our-work">Our Work</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#ourservice-business">Services</a></li>
+      <li><a href="#ourtiming">Opining Hours</a></li>
+    </ul>
+  </div>
+</div>
+<div id="work">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="logobusiness"><img class="img-fluid" src="{% static 'assets/img/business.png' %}"></div>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-12 fsg">
+            <div class="hlf">
+              <p class="review34">123<br>
+                <span>Reviews</span></p>
+              <p class="review34">45K<br>
+                <span>Followers</span></p>
+              <div class="businessbtn">
+                <button class="btn-follow">Follow</button>
+                <button class="btn-chat"><i class="fas fa-comments"></i>&nbsp;&nbsp;Chat</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 fsg">
+            <div class="rat-main">
+              <p class="rating">Rating</p>
+              <p class="stars"><span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span>&nbsp;&nbsp;4.5</p>
+            </div>
+            <button class="btn-apoin">Book Appointment</button>
+          </div>
+          <div class="col-12 fsg2">
+            <div id="calls">
+              <p class="ast">Call us</p>
+              <p>+44 20 7946 0302</p>
+            </div>
+            <div id="calls">
+              <p class="ast">Email</p>
+              <p>bookexpert@gmail.com</p>
+            </div>
+            <div id="calls">
+              <p class="ast">Follow us</p>
+              <div class="social-business"> <a href=""><img src="{% static 'assets/img/Facebook F.png' %}" class="rounded-circle"></a> <a href=""><img src="{% static 'assets/img/Instagram.png' %}" class="rounded-circle"></a> <a href=""><img src="{% static 'assets/img/Twitter.png' %}" class="rounded-circle"></a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="container">
+  <div class="book-about">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="story-about">
+          <h1>About Us</h1>
+          <p>Barber utate ons amet ravida haretra nuam the duru miss uctus the drana accumsan justo aliquam sit amet auctor orci done vitae risus duise nisan sapien silver on the accumsan id mauris apien. Brown haretra  Barber utate ons amet ravida haretra nuam the duru miss uctus the drana accumsan justo aliquam sit amet auctor orci done vitae risus duise nisan sapien silver on the accumsan id mauris apien. Brown haretra </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h1 class="locations">Location</h1>
+        <div class="embed-responsive embed-responsive-100x400px">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d35818.719732048536!2d-4.25169!3d55.868392!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488815562056ceeb%3A0x71e683b805ef511e!2sGlasgow%2C+Glasgow+City%2C+UK!5e0!3m2!1sen!2sus!4v1448625188752" width="100%" height="270" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="expert">
+  <div class="container">
+    <div class="row">
+      <h4 class="ourworkspec">Our Specialist</h4>
+      <div class="col-md-4 col-sm-6">
+        <div class="col-item">
+          <div class="photo"> <img class="img-fluid" src="{% static 'assets/img/serious-sceptical.png' %}">
+            <button class="btn15">Book</button>
+          </div>
+          <div class="info">
+            <div class="cption">
+              <div class="mainleft">
+                <h4 class="name_barbar">Alexender Smith</h4>
+                <p>Barber</p>
+              </div>
+              <div class="mainright"> <a href=""> <i class="fa-solid fa-share-nodes"></i></a> </div>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="col-item">
+          <div class="photo"> <img class="img-fluid" src="{% static 'assets/img/pensive-man-with-beard.png' %}">
+            <button class="btn15">Book</button>
+          </div>
+          <div class="info">
+            <div class="cption">
+              <div class="mainleft">
+                <h4 class="name_barbar">Kelvin Doe</h4>
+                <p>Hair Stylist</p>
+              </div>
+              <div class="mainright"> <a href=""> <i class="fa-solid fa-share-nodes"></i></a> </div>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="col-item">
+          <div class="photo"> <img class="img-fluid" src="{% static 'assets/img/bearded-man-with-phone.png' %}">
+            <button class="btn15">Book</button>
+          </div>
+          <div class="info">
+            <div class="cption">
+              <div class="mainleft">
+                <h4 class="name_barbar">Scot Moran</h4>
+                <p>Barber</p>
+              </div>
+              <div class="mainright"> <a href=""> <i class="fa-solid fa-share-nodes"></i></a> </div>
+            </div>
+            <div class="clearfix"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="our-work">
+  <div class="container">
+    <div class="row">
+      <h4 class="ourwork">Our Work</h4>
+      <div class="col-md-12 gallery-bus"> <img class="img-fluid" src="{% static 'assets/img/gallery-4.png' %}"> <img class="img-fluid" src="{% static 'assets/img/gallery-1.png' %}"> <img class="img-fluid" src="{% static 'assets/img/gallery-2.png' %}"> <img class="img-fluid" src="{% static 'assets/img/gallery-3.png' %}"> </div>
+    </div>
+  </div>
+</div>
+<div id="ourservice-business">
+  <div class="container">
+    <div class="row">
+      <h4 class="ourworkserv">Our Services <span><a href="#">View all</a></span></h4>
+      <div class="col-md-4 col-sm-4 col-xs-12 top12">
+        <div id="srvmain">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="oldman">Old men</div>
+              <div class="ads23">30 min</div>
+            </div>
+            <div class="col-md-12">
+              <div class="ptc"> <img class="img-fluid" src="{% static 'assets/img/skin-fade.png' %}">
+                <h4 class="sknfadw">Skin  Fade </h4>
+                <p class="pt-price">Price:  £60.00</p>
+              </div>
+              <p class="skntext">Moustache Trim drana lorem ipsum amet  enim mi in the obortis esetena silver enes accumsan... </p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-book">
+          <button class="btn16">Book</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 top12">
+        <div id="srvmain">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="oldman">Kids</div>
+              <div class="ads23">30 min</div>
+            </div>
+            <div class="col-md-12">
+              <div class="ptc"> <img class="img-fluid" src="{% static 'assets/img/haircut.png' %}">
+                <h4 class="sknfadw">Haircut </h4>
+                <p class="pt-price">Price:  £60.00</p>
+              </div>
+              <p class="skntext">Haircut drana lorem ipsum amet navida haretra nuam enim mi in the obortis esetena silver enes accumsan... </p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-book">
+          <button class="btn16">Book</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 top12">
+        <div id="srvmain">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="oldman">Old men</div>
+              <div class="ads23">30 min</div>
+            </div>
+            <div class="col-md-12">
+              <div class="ptc"> <img class="img-fluid" src="{% static 'assets/img/sci-cut.png' %}">
+                <h4 class="sknfadw">Skin  Fade </h4>
+                <p class="pt-price">Price:  £60.00</p>
+              </div>
+              <p class="skntext">Moustache Trim drana lorem ipsum amet navida haretra nuam enim mi in the obortis... </p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-book">
+          <button class="btn16">Book</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 top12">
+        <div id="srvmain">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="oldman">Old men</div>
+              <div class="ads23">30 min</div>
+            </div>
+            <div class="col-md-12">
+              <div class="ptc"> <img class="img-fluid" src="{% static 'assets/img/shave.png' %}">
+                <h4 class="sknfadw">Shave </h4>
+                <p class="pt-price">Price:  £60.00</p>
+              </div>
+              <p class="skntext">Moustache Trim drana lorem ipsum amet navida haretra nuam enim mi in the obortis esetena silver enes accumsan... </p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-book">
+          <button class="btn16">Book</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 top12">
+        <div id="srvmain">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="oldman">Kids</div>
+              <div class="ads23">30 min</div>
+            </div>
+            <div class="col-md-12">
+              <div class="ptc"> <img class="img-fluid" src="{% static 'assets/img/beardtrim.png' %}">
+                <h4 class="sknfadw">Beard Trim </h4>
+                <p class="pt-price">Price:  £60.00</p>
+              </div>
+              <p class="skntext">Moustache Trim drana lorem ipsum amet navida haretra nuam enim mi in the obortis esetena silver enes accumsan... </p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-book">
+          <button class="btn16">Book</button>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 top12">
+        <div id="srvmain">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="oldman">Student</div>
+              <div class="ads23">30 min</div>
+            </div>
+            <div class="col-md-12">
+              <div class="ptc"> <img class="img-fluid" src="{% static 'assets/img/coloring.png' %}">
+                <h4 class="sknfadw">Coloring</h4>
+                <p class="pt-price">Price:  £60.00</p>
+              </div>
+              <p class="skntext">Moustache Trim drana lorem ipsum amet navida haretra nuam enim mi in the obortis esetena silver enes accumsan... </p>
+            </div>
+          </div>
+        </div>
+        <div class="btn-book">
+          <button class="btn16">Book</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="reviews">
+  <div class="container">
+    <div class="row atg">
+      <h4 class="ourwork">Our Client Reviews</h4>
+      <div class="col-lg-6 col-md-6">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="rvws2">
+              <div class="alx2 text-end"><span class="fa fa-star checked"></span>&nbsp;&nbsp;4.5</div>
+              <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                  <div class="alx4"><img class="img-fluid" src="{% static 'assets/img/john.png' %}"></div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                  <div class="alx3">
+                    <h4>Alexender Smith</h4>
+                    <p class="text-end2">23/08/2022</p>
+                    <div class="intxt2">Book expert is a breath of fresh air to the industry. It is bright, modern, stylish and a wonderful environment in which to have a treatment.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="rvws2">
+              <div class="alx2 text-end"><span class="fa fa-star checked"></span>&nbsp;&nbsp;4.5</div>
+              <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                  <div class="alx4"><img class="img-fluid" src="{% static 'assets/img/john.png' %}"></div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                  <div class="alx3">
+                    <h4>Alexender Smith</h4>
+                    <p class="text-end2">23/08/2022</p>
+                    <div class="intxt2">Book expert is a breath of fresh air to the industry. It is bright, modern, stylish and a wonderful environment in which to have a treatment.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row atg">
+      <div class="col-lg-6 col-md-6">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="rvws2">
+              <div class="alx2 text-end"><span class="fa fa-star checked"></span>&nbsp;&nbsp;4.5</div>
+              <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                  <div class="alx4"><img class="img-fluid" src="{% static 'assets/img/john.png' %}"></div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                  <div class="alx3">
+                    <h4>Alexender Smith</h4>
+                    <p class="text-end2">23/08/2022</p>
+                    <div class="intxt2">Book expert is a breath of fresh air to the industry. It is bright, modern, stylish and a wonderful environment in which to have a treatment.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="rvws2">
+              <div class="alx2 text-end"><span class="fa fa-star checked"></span>&nbsp;&nbsp;4.5</div>
+              <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                  <div class="alx4"><img class="img-fluid" src="{% static 'assets/img/john.png' %}"></div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                  <div class="alx3">
+                    <h4>Alexender Smith</h4>
+                    <p class="text-end2">23/08/2022</p>
+                    <div class="intxt2">Book expert is a breath of fresh air to the industry. It is bright, modern, stylish and a wonderful environment in which to have a treatment.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	<div class="row atg">
+      <div class="col-lg-6 col-md-6">
+	  Would You Like To Leave A Review?
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="rvws2">
+              
+              <div class="row">
+                <div class="col-md-2 col-sm-2 col-xs-2">
+                  <div class="alx4"><img class="img-fluid" src="{% static 'assets/img/john.png' %}"></div>
+                </div>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                  <div class="alx3">
+                    <div class="intxt2">Book expert is a breath of fresh air to the industry. It is bright, modern, stylish and a wonderful environment in which to have a treatment.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div id="ourtiming">
+  <div class="contactp2">
+    <div class="container">
+      <div class="row">
+        <h1 class="o-hour">Opining Hours</h1>
+        <div class="col-md-2 col-sm-3">
+          <div class="open-hour">
+            <p class="days">Mon</p>
+            <p class="times">09:00AM-05:30PM</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-3">
+          <div class="open-hour">
+            <p class="days">Tue</p>
+            <p class="times">09:00AM-05:30PM</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-3">
+          <div class="open-hour">
+            <p class="days">Wed</p>
+            <p class="times">09:00AM-05:30PM</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-3">
+          <div class="open-hour">
+            <p class="days">Thu</p>
+            <p class="times">09:00AM-05:30PM</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-3">
+          <div class="open-hour">
+            <p class="days">Fri</p>
+            <p class="times">09:00AM-05:30PM</p>
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-3">
+          <div class="open-hour">
+            <p class="days">Sat</p>
+            <p class="times">09:00AM-05:30PM</p>
+          </div>
+        </div>
+        <h1 class="o-hour">Sunday : Closed</h1>
+      </div>
+    </div>
+  </div>
+</div>{% endblock %}

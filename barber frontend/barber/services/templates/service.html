@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load static %}
+<!-- Additional CSS or other template-specific tags can go here -->
+
+{% block content %}
+  
+<div class="head-top4">
+  <div class="hero-container">
+    <h1>Our Services</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="menutxt">
+    <h1 class="text-center">The Menu</h1>
+  </div>
+  <div id="menu">
+    <div class="row">
+      {% for service in services_data %}
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="classic">{{ service.service_name }}</div>
+            <div id="price1">£{{ service.price }}</div>
+          </div>
+          <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="classic2-john"> {{ service.description }}</div>
+            <div id="btn2">
+              <button type="submit" class="btn btn-primary btn-block mb-3">Book</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+ 
+   
+  </div>
+</div>
+{% endblock %}

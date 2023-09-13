@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Bootstrap Example</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="{% static 'css/style.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'assets/fontawesome-free-6.0.0-web/css/all.min.css' %}">
+<link href="{% static 'assets/bootstrap-5.3.1/css/bootstrap.min.css' %}" rel="stylesheet">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+  <div class="container-fluid"> <a class="navbar-brand" href="javascript:void(0)"><img src="{% static 'assets/img/logo top.png' %}"><span>Book Expert</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item "> <a class="nav-link {% if request.resolver_match.url_name == 'index' %} active {% endif %}" href="{% url 'index' %}">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link {% if request.resolver_match.url_name == 'about' %} active {% endif %}" href="{% url 'about' %}">About Us</a> </li>
+        <li class="nav-item"> <a class="nav-link  {% if request.resolver_match.url_name == 'service' %} active {% endif %}" href="{% url 'service' %}">Service </a> </li>
+        <li class="nav-item"> <a class="nav-link {% if request.resolver_match.url_name == 'gallery' %} active {% endif %}" href="{% url 'gallery' %}">Gallery </a> </li>
+        <li class="nav-item"> <a class="nav-link {% if request.resolver_match.url_name == 'contact' %} active {% endif %}" href="{% url 'contact' %}">Contact</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="javascript:void(0)">Blog</a> </li>
+      </ul>
+      <form class="d-flex">
+        <div class="heads"> <i class="fa-solid fa-magnifying-glass" style="color:#fff"></i>
+          <button class="btn btn-primarylogin" type="button">Login</button>
+          <select class="signup_barber" name="signup_barber">
+            <option value="0">Select Sign Up</option>
+            <option value="1">Sign up Barber </option>
+            <option value="2">Sign up Bussiness </option>
+          </select>
+        </div>
+      </form>
+    </div>
+  </div>
+</nav>
+
+{% block content %}
+
+{% endblock %}
+
+<div class="footer">
+    <div class="container_footer">
+     
+        <div class="row">
+          <div class="col-md-5 col-sm-6 col-xs-12 logo-footer"><a href="#"><img src="{% static 'assets/img/logo top.png' %}"></a><span>
+            <h1>Book Experts</h1>
+            <p>Become a partner</p>
+            </span></div>
+          <div class="col">
+            <h3 class="bold_text">About us</h3>
+            <li><a href="">For Business</a></li>
+            <li><a href="">For Customer</a></li>
+            <li><a href="">For Individual</a></li>
+          </div>
+          <div class="col">
+            <h3 class="bold_text">Our Services</h3>
+            <li><a href="">Hair Cutting</a></li>
+            <li><a href="">Shaving</a></li>
+            <li><a href="">Trimming</a></li>
+          </div>
+          <div class="col">
+            <h3 class="bold_text">Contact us</h3>
+            <div class="phone"><img src="{% static 'assets/img/Call.png' %}" class="rounded-circle"></i>+44 20 7946 0612</div>
+            <br>
+            <br>
+            <div class="social">
+              <p>FOLLOW US ON:</p>
+              <a href=""><img src="{% static 'assets/img/Facebook F.png' %}" class="rounded-circle"></a>
+               <a href=""><img src="{% static 'assets/img/Instagram.png' %}" class="rounded-circle"></a> 
+               <a href=""><img src="{% static 'assets/img/Twitter.png' %}" class="rounded-circle"></a> </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="copy_right"><div class="container">2023 All Rights Reserved</div>
+        </div>
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+
+        <script src="{% static 'assets/bootstrap-5.3.1/js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'assets/fontawesome-free-6.0.0-web/js/all.min.js' %}" type="text/javascript"></script>
+
+        <script>
+          $('.signup_barber').on('change', function(){
+              if ($(this).val() == 1) {
+                  window.location.href = 'http://127.0.0.1:33000/sign-up/'
+              } 
+              if ($(this).val() == 2) {
+                window.location.href = 'http://127.0.0.1:33000/business-sign-up/'
+              } 
+              
+          })
+        </script>
+
+    </body>
+    </html>
